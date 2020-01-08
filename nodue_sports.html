@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Sports no due system
+</title>
+<script>
+function myFunction() {
+    var checkBox = document.getElementById("myCheck3");
+    var text = document.getElementById("t");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+</script>
+</head>
+<body align="center"><br><br><br><br>
+<h2>Sports Dues</h2>
+<table border="0" align="center">
+<tr><td>Enter USN:</td><td><input type="text" name="usn3" id="100" placeholder="USN"/></td></tr>
+
+<tr><td>student name:</td><td><input type="text" name="name3" placeholder="Student's name"/></td></tr>
+<tr><td>Course:</td><td><input type="text" name="course3" placeholder="Course"/></td></tr>
+<tr><td>Semester:</td><td><input type="text" name="sem3" placeholder="Semester"></td></tr>
+
+<tr><td>Dues:</td><td></td></tr>
+<tr><td>Cricket Bat:</td><td><input type="checkbox" name ="sportschk1" value="bat"><input type="text" name="chair" placeholder="Cricket Bat amount"></td></tr>
+<tr><td>Cricket Ball:</td><td><input type="checkbox" name ="sportschk2" value="ball"><input type="text" name="casing" placeholder="Cricket Ball  amount"></td></tr>
+
+<tr><td>Others:</td><td><input type="checkbox" id="myCheck3"  onclick="myFunction()">
+<div id="t" style="display:none"><input type="text" name="other3" placeholder="specify the Due">
+<input type="text" name="other4" placeholder="specify the amount">
+</div>
+<tr><td>Total fine amount:</td><td><input type="text" name="final amount" placeholder="Final amount"></td></tr></table>
+<input type="button" name="submit3" value="submit">
+<input type="reset" name="reset3" value="reset">
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Infrastructure form</title>
+<style>
+background-image: URL("milkyway.jpg"); 
+background-size: 100%;	
+background-repeat:norepeat;
+color:white;
+font-family: "Times New Roman", sans-serif;
+</style>
+<script>
+function myFunction() 
+{
+    var checkBox = document.getElementById("myCheck2");
+    var text = document.getElementById("show");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    }
+	else {
+       text.style.display = "none";
+    }
+}
+
+	</script>
+</head>
+<body align="center"><br><br><br><br>
+<h2>Infrastructure Dues</h2>
+<table border="0" align="center">
+<tr><td>Enter USN:</td><td><input type="text" name="usn2" placeholder="USN"/></td></tr>
+<tr><td>student name:</td><td><input type="text" name="name2" placeholder="Student's name"/></td></tr>
+<tr><td>Course:</td><td><input type="text" name="course2" placeholder="Course"/></td></tr>
+<tr><td>Semester:</td><td><input type="text" name="sem2" placeholder="Semester"></td></tr>
+<tr><td>Dues:</td><td></td></tr><br>
+<tr><td>Chair:</td><td><input type="text" name="chair" placeholder="Chair amount"></td></tr>
+<tr><td>Casing:</td><td><input type="text" name="casing" placeholder="Casing amount"></td></tr>
+<tr><td>Table:</td><td><input type="text" name="tables" placeholder="Table amount"></td></tr>
+<tr><td>Others:</td><td><input type="checkbox" id="myCheck2"  onclick="myFunction()">
+
+<div id="show" style="display:none">
+<input type="text" name="other1" placeholder="Specify the Due"><br/>
+<input type="text" name="other2" placeholder="specify the amount">
+</div>
+<tr><td></td>Total fine amount:</td><td><input type="text" name="final amount" placeholder="Final amount"></td></tr></table>
+<input type="button" name="submit2" value="submit">
+<input type="reset" name="reset2" value="reset">
+</body>
+</html>

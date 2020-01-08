@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>	
+Laboratory Due
+</title>
+<style>
+body { 
+background-image: URL(""); 
+background-size: 100%;	
+background-repeat:norepeat;
+color:black;
+font-family: "Times New Roman", sans-serif;
+}
+</style>
+<script>
+function myFunction() {
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementById("t");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+}
+
+ function myFunction1()
+{   var checkBox = document.getElementById("myCheck");
+    var text = document.getElementById("t1");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+} 
+</script>
+</head>
+
+<body align="center"><br><br><br><br>
+<form action="nodue_lab.php" method="POST">
+<h2>Laboratory Dues</h2>
+<table border="0"align="center">
+
+<tr><td>Enter USN:</td><td><input type="text" name="usn1" id="100" placeholder="USN"/></td><td><input type="button" name="search" value="Search"></td></tr>
+<tr><td>student name:</td><td><input type="text" name="name1" placeholder="Student's name"/></td></tr>
+<tr><td>Course:</td><td><input type="text" name="course1" placeholder="Course"/></td></tr>
+<tr><td>Semester:</td><td><input type="text" name="sem1" placeholder="Semester"></td></tr>
+<tr><td>Dues:</td></tr><br>
+<tr><td>Keyboard:</td><td><input type="text" name="keyboard" placeholder="Keyboard amount"></td></tr>
+<tr><td>Mouse:</td><td><input type="text" name="mouse" placeholder="Mouse amount"></td></tr>
+<tr><td>Monitor:</td><td><input type="text" name="monitor" placeholder="Monitor amount"></td></tr>
+<tr><td>Others:</td><td><input type="checkbox" id="myCheck"  onclick="myFunction()">
+
+<div id="t" style="display:none">
+<input type="text" name="other1" placeholder="Specify the Due"><br/>
+<input type="text" name="other2" placeholder="specify the amount">
+</div>
+
+<tr><td>Total fine amount:</td><td><input type="text" name="final_amount" placeholder="Final amount"></td></tr>
+</table><br/>
+<input type="button" name="submit" value="submit">
+<input type="reset" name="reset1" value="reset">
+</form>
+</body>
+</html>

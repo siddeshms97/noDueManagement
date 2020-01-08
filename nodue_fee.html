@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Fee no due system
+</title>
+<script>
+function myFunction() {
+    var checkBox = document.getElementById("myCheck4");
+    var text = document.getElementById("t");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+</script>
+</head>
+<body align="center"><br><br><br><br>
+<h2>Fees Dues</h2>
+<table border="0" align="center">
+<tr><td>Enter USN:</td><td><input type="text" name="usn4" id="100" placeholder="USN"/></td></tr>
+
+<tr><td>student name:</td><td><input type="text" name="name4" placeholder="Student's name"/></td></tr>
+<tr><td>Course:</td><td><input type="text" name="course4" placeholder="Course"/></td></tr>
+<tr><td>Semester:</td><td><input type="text" name="sem4" placeholder="Semester"></td></tr>
+
+<tr><td>Dues:</td><td></td></tr>
+<tr><td>Tuition Fees:</td><td><input type="text" name="tutfee" placeholder="Tution due amount"></td></tr>
+<tr><td>Examination Fees:</td><td><input type="text" name="examfee" placeholder="Exam due amount"></td></tr>
+
+<tr><td>Others:</td><td><input type="checkbox" id="myCheck4"  onclick="myFunction()">
+<div id="t" style="display:none"><input type="text" placeholder="specify the Due">
+<input type="text" placeholder="specify the amount">
+</div>
+<tr><td>Total fine amount:</td><td><input type="text" name="final amount" placeholder="Final amount"></td></tr></table>
+<input type="button" name="submit4" value="submit">
+<input type="reset" name="reset4" value="reset">
+</body>
+</html>
